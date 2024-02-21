@@ -1,0 +1,2654 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+}
+
+html{
+	font-size: 62.5%;
+	font-family: "Circular Std", sans-serif;
+	
+
+	
+}
+
+body{
+
+	width: 100%;
+	height: 100%;
+	/*background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);*/
+	 
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color:  #fff;
+	overflow-x: hidden;
+
+
+}
+
+/*
+=========================================
+
+
+=========================================*/
+
+.loader {
+	position: relative;
+	z-index: 555;
+  margin: auto;
+  border: 20px solid #EAF0F6;
+  border-radius: 50%;
+  border-top: 20px solid #FF7A59;
+  width: 200px;
+  height: 200px;
+  animation: spinner 4s linear infinite;
+}
+@keyframes spinner {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+.dropdown{
+	position: fixed;
+	bottom: 3rem;
+	right: 3rem;
+	z-index: 9999;
+	background-color: #086ad7;
+	width: 5rem;
+	height: 5rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+}
+
+.dropdown:hover{
+	background-color: #211e3b;
+	transition: linear .5s;
+}
+
+.dropdown i{
+	color: #fff;
+	font-size: 2rem;
+}
+
+/*====================================================
+start header section 
+======================================================*/
+
+.welcome-text{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.8rem;
+	font-weight: 600;
+	background-color: #e6f0fb;
+	color: grey;
+	height: 7rem;
+	overflow: hidden;
+}
+
+.main-header{
+	display: flex;
+	width: 100%	;
+	height: 12rem;
+}
+
+.main-header .logo {
+	width: 20rem;
+}
+
+.logo{
+	display: flex;
+	justify-content: center;
+	padding-left: 6rem;
+	padding-top: 3rem;
+
+	
+
+}
+
+.navbar{
+
+	display: flex;
+   text-decoration: none;
+   color: #000;
+   width: auto;
+   left: 8rem;
+   overflow: hidden;
+}
+
+.email{
+	border-left: .1rem solid #dadada;
+	padding-right: 4rem;
+	
+	
+}
+
+.email .contact{
+	border-right: .1rem solid #dadada;
+	
+	display: flex;
+	justify-content: center;
+
+}
+
+.email-content{
+	color: #000;
+	font-size: 2rem;
+	letter-spacing: -2;
+	line-height: 1rem;
+}
+.email-content h3{
+	font-weight: 600;
+
+}
+
+.email-content span{
+	color: grey;
+	font-weight: 600;
+	font-size: 1.6rem;
+}
+
+
+
+.icon{
+	font-size: 2.5rem;
+	color: #086ad7;
+	font-weight: 200;
+	display: flex;
+}
+
+.fa-envelope{
+	display: flex;
+	position: relative;
+	top: 3rem;
+	padding: 1rem;
+}
+
+.contact {
+	width: 35rem;
+	display: flex;	
+
+	border-left: .1rem solid #dadada;
+	}
+
+	.content-contact{
+		position: relative;
+	   left: 12rem;
+   
+	}
+
+	.content-contact h3{
+		font-weight: 600;
+	}
+
+
+
+	.content-contact span{
+		color: grey;
+	font-weight: 600;
+	font-size: 1.6rem;
+	}
+
+.icon-volume{
+	display: flex;
+	position: absolute;
+	top: 2rem;
+	left: 28rem;
+  color:  #086ad7;
+	padding: 1rem;
+	font-size: 3.6rem;
+	font-weight: 200;
+
+}
+
+
+
+
+
+.hour{
+	width: 32rem;
+	position: relative;
+	padding-right: 15rem;
+	border-left: .1rem solid #dadada;
+
+
+}
+
+.icon-hour i{ 
+	position: absolute; 
+	display: flex; 
+	top: 3rem; 
+	padding: 1rem; 
+
+}
+
+.content-hour{
+	position: absolute;
+	left: 4.8rem;
+
+
+}
+
+.content-hour h3{
+	font-weight: 600;
+}
+
+.content-hour span{
+	color: grey;
+	font-weight: 600;
+	font-size: 1.6rem;
+	line-height: -1rem;
+
+}
+
+.hamburger{
+	font-size: 3rem;
+	font-weight: 0;
+	color: #fff;
+	background-color: #000;
+	width: 10rem;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+}
+
+.hamburger:hover{
+	background-color: #086ad7;
+
+}
+
+.main-menu{
+    width: 100.1rem;
+    position: relative;
+    z-index: 444; 
+    bottom: 2.1rem;
+    left: 8rem;
+
+}
+
+.main-menu ul{
+	display: flex;
+	gap: 3rem;
+	background-color: #086ad7;
+	height: 7rem;
+	text-decoration: none;
+	justify-content: center;
+	list-style-type: none;
+	color: #fff;
+	justify-content: center;
+	align-items: center;
+	font-size: 4rem;
+}
+.sub-menubar-{
+	display: ;
+	position: absolute;
+	z-index: 1;
+	transition: linear .8s;
+	margin-right: 3rem;
+	
+	opacity: 0 ;
+	top: 10rem;
+	width: 26rem;
+	line-height: 3.6rem;
+	display: flex;
+	justify-content: center;
+	background-color: #086ad7;
+	height: 50rem;
+}
+.service-arrow:hover + .sub-menubar-{
+	display: block;
+	position: absolute;
+	z-index: 40;
+	top: 4rem;
+     margin-right: 3rem;
+      transition-duration: .4s;
+	width: 26rem;
+	line-height: 3.6rem;
+	display: flex;
+	justify-content: center;
+	background-color: #086ad7;
+	height: 50rem;
+	opacity: 50;	
+}
+
+.service-arrow:hover .sub-menubar-:hover
+{
+
+	display: block;
+	position: absolute;
+	z-index: 40;
+	top: 4rem;
+    margin-right: 3rem;
+	width: 26rem;
+	line-height: 3.6rem;
+	display: flex;
+	justify-content: center;
+	background-color: #086ad7;
+	height: 50rem;
+	opacity: 50;	
+}
+
+.sub-menubar- ul{
+     font-size: 2rem;
+}
+
+.main-menu li a{
+	color: #fff;
+	font-size: 1.7rem;
+	display: flex;
+	gap: 6rem;
+	font-weight: 600;
+
+
+}
+
+.main-menu li a:hover{
+	list-style-type: none;
+	color: #fff;
+	font-weight: 600;
+	margin-bottom: 1rem;
+	text-decoration: none;
+	position: relative;
+	z-index: 444;
+}
+
+.service-arrow i{
+	position: relative;
+	right: 5.5rem;
+	display: flex;
+	width: 1rem;
+	max-width: 7rem;
+
+}
+
+
+.li-submenu{
+	position: relative;
+	left: 2.6rem;
+}
+
+ul.menu-bar{
+	display: inline-block;
+	position: absolute;
+	z-index: 33;
+}
+
+
+
+
+
+
+.menu-bar{
+	position: relative;
+	background-color: #086ad7;
+	height: 50rem;
+}
+
+.menu-bar{
+    position: absolute;
+	text-decoration: none;
+	background-color: #086ad7;
+	height: 40rem;
+}
+
+.menu-bar ul{
+	display: none;
+}
+
+
+
+.consultancy{
+	position: relative;
+	left: 12rem;
+	background-color: #086ad7;
+	color: #fff;
+	font-size: 1.8rem;
+	width: 15rem;
+	border-radius: .5rem;
+	height: 4rem;
+	padding: 4rem;
+	height: 5.6rem;
+	display: flex;
+	justify-content: center;
+	gap: 1rem;
+}
+
+.consultancy:hover{
+	background-color: #000;
+	
+	display: flex;
+	gap: 1rem;
+	justify-content: center;
+    color: #fff;
+  text-decoration: none;
+  transition-delay: .3s;
+}
+
+
+
+ 
+
+
+
+
+/*
+ end header section
+ ============================================================*/
+
+
+/*
+==================================================
+start main  content section-2
+=================================================*/
+ .heading-main-section{
+ 	overflow: auto;
+
+ }
+
+
+.heading-section{
+	height: 60rem;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://www.extracle.com/assets/img/home3/slide2.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+	filter: opacity(var(--value, 100%)); --value: 500%;
+	position: relative;
+	z-index: -12222;
+	overflow: hidden;
+
+	
+ 
+}
+ 
+ .content-img{
+ 	position: absolute;
+ 	top: 18rem;
+ 	left: 25rem;
+ 	z-index: 22;
+ 	color: #fff;
+ 	overflow: visible; 	
+ 	
+ 	
+
+ }
+
+
+ .content-img p{
+ 	font-size: 3rem;
+
+ }
+
+ .content-img h1{
+ 	font-size: 7rem;
+ 	font-weight: 700;
+ }
+
+ .content-img a{
+ 	font-size: 1.7rem;
+   padding: 2rem;
+   color: #fff;
+   margin: 2rem;
+   width: 23rem;
+   position: static;
+   top: 3rem;
+
+  
+ }
+
+ .content-img a:hover{
+ 	 margin: 1.5rem;
+  
+    padding: 2rem;
+
+ }
+
+
+ .service-btn{
+ 	background-color: #086ad7;
+ 	padding: 1rem;
+ 	border-radius: .5rem;
+ 	
+ }
+
+
+
+ .service-btn:hover{
+ 	background-color: #000;
+ 	color: #fff;
+ 	text-decoration: none;
+ 	list-style-type: none;
+ 
+ }
+
+ .fa-arrow-right-btn{
+ 	font-size: 5rem;
+ 	font-weight: 200;
+ 	padding: 1.6rem;
+ 	
+ }
+
+ .content-img i{
+ 
+ 	
+   font-size: 2rem;
+ }
+
+ .connect-btn{
+ 	background-color: transparent;
+ 	border:  .1rem solid lightskyblue;
+ 	padding: 1rem;
+ 	border-radius: .5rem;
+ 	gap: 4;
+ }
+
+ .connect-btn:hover{
+ 	background-color: #086ad7;
+ 	color: #fff;
+ 	text-decoration: none;
+ 	list-style-type: none;
+    transition-delay: .3s;
+ 	border: none;
+ }
+
+/*
+end main content section-2 
+==============================================*/
+
+
+/*
+========================================
+start about section 
+=======================================*/
+
+
+ .about-sec{
+ 	height: 116rem;
+ 	width: auto;
+ 	overflow: hidden;
+
+ }
+
+ .about{
+ 	position: relative;
+ 	left: 12rem;
+ 	top: 12rem;
+ 	width: 50rem;
+ 	max-width: 90rem;
+
+ }
+ .about span{
+    position: absolute;
+    font-weight: 900;
+    font-size: 12rem;
+    line-height: 1;
+    color: #211e3b;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    opacity: .05;
+    z-index: -1;
+/*    top: -40px;*/
+    text-transform: uppercase;
+    margin: 0px auto;
+}
+
+
+ .about-company-text{
+ font-size: 3rem;
+ position: relative;
+ top: 34rem;
+ color: #086ad7;
+
+ }
+
+ .about h1{
+ 	font-size: 4rem;
+ 	font-weight: 900;
+ 	color: #000;
+ 	position: relative;
+ 	top: 2.7rem;
+  
+
+ }
+
+ .content-card{
+ 	line-height: 5rem;
+ }
+
+
+
+ .about-icon-box{
+ 	position: relative;
+ 	top: 27rem;
+ 	left: 14rem;
+ 	width: 45rem;
+ 	height: auto;
+ 	box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+ 	border-radius: 1rem;
+ 	overflow: hidden;
+
+
+ }
+
+ .about-icon-box:hover{
+ 	border: .2rem solid #086ad7;
+
+ }
+
+.about-icon-box h3{
+
+	font-size: 2rem;
+	margin-left: 12rem;
+	font-weight: 700;
+
+}
+
+.about-icon-box	 .fa-solid {
+	
+	top: 0;
+	font-size: 4rem;
+}
+
+.content-card	 ul{
+	
+	font-size: 1.7rem;
+	list-style-type: none;
+	text-decoration: none;
+
+}
+
+.content-card ul li{
+	padding: .1rem;
+	margin-left: 10rem;
+	font-weight: 600;
+	text-align: left;
+}
+
+.icon-user{
+	position: relative;
+	top: 5rem;
+	left: 3rem;
+}
+.checked-list span{
+	margin: 1rem;
+}
+
+
+.consultations-form{
+	position: relative;
+	z-index: 111;
+	bottom: 81rem;
+	left: 75rem;
+	  width: 50rem;
+	  height: 70rem;
+	  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+	  border-radius: 1rem;
+	  overflow: hidden;
+}
+
+.consultations-form:hover{
+   display: flex;
+   position: relative;
+   bottom: 81rem;
+}
+
+.fa-square-check{
+
+    
+    font-weight: 700;
+    font-size: 25px;
+    color: #086ad7;
+    border-radius: 50%;
+}
+
+
+.consultations-form p{
+	font-size: 2rem;
+	color: #086ad7;
+	display: flex;
+	position: absolute;
+	top: 7rem;
+	left: 6rem;
+}
+
+
+.consultations-form h1{
+	font-size: 5rem;
+	position: absolute;
+	top: 9rem;
+	left: 5rem;
+}
+
+.consultations-form form{
+	position: absolute;
+	top: 12rem;
+	margin: 5rem;
+}
+
+.data{
+	margin: 1rem;
+	padding: 3rem;
+	width: 30rem;
+	border: .6px solid #dadada;
+	border-radius: 1rem;
+}
+
+.data:hover{
+	border: .1rem solid #086ad7;
+	border-radius: 1rem;
+}
+
+.theme-btn{
+	background-color: #086ad7;
+	color: #fff;
+	padding: 1rem;
+	border: none;
+	border-radius: .5rem;
+	margin-top: 2.5rem;
+	margin-left: 2.5rem;
+	font-size: 2rem;
+	width: 20rem;
+
+}
+.theme-btn i{
+	padding: 1rem;
+}
+
+
+/*
+end about sectiion 
+=====================================*/
+ 
+ 
+
+
+/*
+============================================
+start IT service section 
+============================================*/
+.it-service{
+	position: relative;
+	background-color: #211e3b;
+	color: #fff;
+	height: auto;
+	overflow: visible;
+	width: 100%;
+}
+
+.section-title span{
+	color: #E0FFFF;
+	font-size: 16rem;
+		filter: grayscale(100%);
+			filter: contrast(0);
+}
+
+
+.section-title p{
+	font-size: 1.5rem;
+ 
+   }
+
+   .head-it{
+   	position: relative;
+   	bottom: 13rem;
+   	font-weight: 900;
+   }
+   .head-it h1{
+   	font-weight: 900;
+   }
+
+
+
+
+
+.section-title-service span {
+    position: absolute;
+   
+    font-weight: 900;
+    font-size: 120px;
+    line-height: 1;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    opacity: .04;  
+    top: 199rem;
+    left: 78rem;
+    text-transform: uppercase;
+    margin: 0px auto;
+    z-index: 45555;
+}
+
+.head-it{
+ background-color: transparent; 
+	position: relative; 
+	top: 11rem;
+	font-weight: 700; 
+}
+
+.head-it p{
+	font-size: 2rem;
+	position: relative;
+	left: 2rem;
+	bottom: 1rem;
+
+}
+
+.head-it h1{
+	position: relative;
+	bottom: 1.5rem;
+	font-size: 4rem;
+}
+
+.d-flex{
+	display: flex;
+	
+
+}
+
+
+.single-service-box-1{
+	padding: 2rem;
+	background-color: #fff;
+	color: #000;
+	width: auto;
+	border-radius: .5rem;
+    height: auto;
+    margin: 1rem;
+   position: relative;
+   top: 15rem;
+ 
+   
+ }
+
+ .card {
+ 	
+ 	width: auto;
+ 	
+ }
+
+   .single-service-box-1 .content-overlay{
+ 	 padding: 20px 30px;
+    opacity: 0;
+    visibility: hidden;
+    background-color: #fff;
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    -webkit-transform: translateY(30%);
+    transform: translateY(30%);
+    width: 35.5rem;
+}
+
+ .single-service-box-1:hover .content-overlay {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+}
+
+.content-overlay h4 a{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 3rem;
+	font-weight: 400;
+	text-align: center;
+
+}
+
+.content-overlay p{
+	font-size: 1.6rem;
+	color: #696969;
+	font-weight: 700;
+	text-align: center;
+}
+
+.content-overlay a{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #086ad7;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 1.6rem;
+	padding: 1rem;
+}
+
+.content-overlay a:hover{
+	text-decoration: none;
+}
+
+.content-overlay a i{
+	padding: 3rem;
+}
+
+#bpo{
+	color: #211e3b;
+	font-size: 2.6rem;
+	font-weight: 800;
+	text-decoration: none;
+}
+
+#bpo:hover{
+	color: #000;
+	text-decoration: none;
+}
+
+ 
+ 
+       
+
+
+	
+
+ .single-service-box-1:hover, + .content-overlay{
+ 	display: block;
+ 	position: absolute;
+ 	z-index: 555;
+ 	background-color: red;
+ 	border: 1rem solid blue;
+ 	overflow: hidden;
+ }
+
+
+ 
+
+	.card img{
+		border-radius: .5rem;
+		display: flex;
+		justify-content: start;
+		align-items: start;
+		width: auto;
+	
+		position: relative;
+
+	}
+
+	.card-text h4 a{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		
+		font-size: 2rem;
+		font-weight: 900;
+		color:  #000;
+		width: 33rem;
+	}
+
+
+	.card-text h4 a:hover{
+		text-decoration: none;
+		list-style-type: none;
+	}
+
+	.card-text p{
+		display: flex;
+		color: #808080;
+		font-weight: 800;
+		font-size: 1.5rem;
+		position: relative;
+		align-items: center;
+		justify-content: center;
+		width: 32rem;
+	}
+
+	.col-size{
+		width: auto;
+	}
+
+
+	
+
+
+
+	/*
+end IT service section
+========================================*/
+
+
+/*
+=========================================
+start how does work section
+=========================================*/
+.how-does-work{
+	background-color: #eef4fc;
+	height: auto;
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+}
+
+.text-center-meeting{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	top: 6rem;
+}
+
+.text-center-meeting span{
+	color: #211e3b;
+	opacity: .08;
+	font-size: 12rem;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.text-center-meeting p{
+	color: #086ad7;
+	font-size: 1.7rem;
+	font-weight: 600;
+	text-transform: uppercase;
+	position: relative;
+	bottom: 10rem;
+	left: 14rem;
+}
+
+.text-center-meeting h1{
+	font-size: 3.8rem;
+	font-weight: 900;
+	color: #211e3b;
+	text-transform: capitalize;
+	position: relative;
+	bottom: 11rem;
+	left: 9rem;
+}
+
+.how-does-work-main{
+	display: flex;
+	padding: 10rem;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.how-does-work-common{
+	width: 33rem;
+
+	gap: 5;
+}
+
+.how-does-work-common span{
+		display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-left: 8rem;
+}
+
+.how-does-work-main h3{
+	font-size: 2.4rem;
+	color: #21133b;
+	font-weight: 700;
+	margin-left: 2rem;
+	
+
+}
+
+.how-does-work-main p{
+	font-size: 1.6rem;
+	font-weight: 600;
+	color: #696969;
+	width: 22rem;
+	max-width: 22rem;
+	margin-left: 1rem;
+}
+
+.how-does-work-main span{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #696969;
+	font-weight: 900;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 4rem;
+	height: 4rem;
+	border-radius: 50%;
+	border: .2rem solid #dbe0ea;
+}
+
+.how-does-work-main i{
+		display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.coffee-div, .analysis-div{
+	position: relative;
+	bottom: 6rem;
+	
+}
+
+.trophy-div{
+	margin-left: 11rem;
+}
+.analysis-div{
+	margin-left: 9rem;
+}
+.icon-margin{
+	background-color: #fff;
+	height: 12rem;
+	width: 12rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+}
+
+.icon-all{
+	background-color: #eef4fc;
+	height: 10rem;
+	width: 10rem;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+
+}
+
+.icon-all:hover{
+	color: #fff;
+	background-color: #086ad7;
+}
+
+.icon-all i{
+	font-size: 5.7rem;
+	color: #086ad7;
+	border-radius: 50%;
+
+}
+
+.icon-all i:hover{
+	color: #fff;
+	background-color: #086ad7;
+}
+
+.icon-margin{
+	margin-left: 2.5rem;
+}
+
+
+.text-get-in-touch{
+	background-image: linear-gradient( #086ad7e8, #086ad7d1 ),
+	url('https://www.extracle.com/assets/img/cta-bg.jpg');
+	
+	position: relative;
+	z-index: 44;
+	left: 15%;
+	border-radius: 1rem;
+	background-position: center;
+	color: #fff;
+	font-family: "Circular Std", sans-serif;
+	width: 70%;
+	height: auto;
+	line-height: 3rem;
+	overflow: hidden;
+	max-width: 100%;
+	background-size: cover;
+}
+
+
+
+.text-get-in-touch h1{
+	display: flex;
+    padding: 0 4rem;
+    position: relative;
+    left: 3.6rem;
+    font-weight: 700;
+
+}
+
+.text-get-in-touch p{
+	text-align: left;
+	max-width: 58%;
+	font-weight: 500;
+	padding-left: 2rem;
+	line-height: 3rem;
+	font-size: 1.7rem;
+	position: relative;
+	left: 6rem;
+
+}
+
+.text-get-in-touch a{
+	position: relative;
+	bottom: 16rem;
+	left: 38rem;
+	padding: 2rem;
+	text-transform: uppercase;
+	font-size: 1.6rem;
+	font-size: 900;
+	border-radius: 1rem;
+	color: #086ad7;
+	background-color: #fff;
+}
+
+.text-get-in-touch a:hover{
+	color: #fff;
+	background-color: #000;
+	text-decoration: none;
+	font-weight: 700;
+}
+
+.text-get-in-touch i{
+	padding: 1rem;
+}
+
+
+
+
+
+
+
+
+
+/*end how does work section
+========================================*/
+
+/*
+===================================
+ start client section
+ =================================*/
+ .dot-circle{
+ 	background-image: url('https://www.extracle.com/assets/img/dot-circle.png');
+ 	position: relative;
+ 	z-index: 555;
+ 	background-color: transparent;
+ 	width: 20rem;
+ 	height: 20rem;
+ 	right: 6rem;
+ 	top: 10rem;
+ }
+
+
+.client-sec{
+	background-color: #eef4fc;
+	height: auto;
+	width: auto;
+
+
+}
+
+
+
+
+.client-country h1{
+	 font-size:  4rem;
+	 width: 30rem;
+	 display: flex;
+	 left: 4rem;
+}
+
+.client-div{
+	position: relative;
+	background-color: #fff;
+/*	background-color: #fff;*/
+	width: 80rem;
+	height: 90rem;
+	right: 3rem;
+	
+
+}
+
+.client-div span{
+	font-size: 10rem;
+	position: relative;
+	top: 5rem;
+	left: 20rem;
+	text-transform: uppercase;
+	letter-spacing: .1rem;
+	font-weight: 700;
+	opacity: .2;
+	color: #dadada;
+}
+
+.client-div p{
+	position: relative;
+	text-transform: uppercase;
+	left:  26rem;
+	bottom: 4.2rem;
+	font-size: 1.8rem;
+	letter-spacing: rem;
+	font-weight: 700;
+	color: #086ad7;
+}
+
+.client-div h1{
+  position: relative;
+  color: #211e3b;
+  left: 25.8rem;
+  bottom: 5rem;
+  font-size: 3.4rem;
+  text-transform: capitalize;
+  font-weight: 800;
+  letter-spacing: .1rem;
+  line-height: 3.8rem;
+
+}
+
+.client-div h3{
+	font-size: 2.4rem;
+	position: relative;
+	left: 26rem;
+	bottom: 2rem;
+	font-weight: 700;
+	color: #211e3b;
+	text-transform: capitalize;
+}
+
+.map-card{
+	width: 80rem;
+	position: relative;
+	top: 15rem;
+	right: 12rem;
+	z-index: 3;
+}
+
+.map-card img{
+	width: 70rem;
+	height: 52.5rem;
+}
+
+.map-card a{
+	position: relative;
+	bottom: 6rem;
+	padding: 1.8rem 3rem;
+	border-radius: 1rem;
+}
+
+.map-card a:hover{
+	background-color: #000;
+	text-decoration: none;
+	color: #fff;
+}
+
+.map-card i{
+	padding: 1.8rem;
+	font-size: 1.6rem;
+}
+
+
+.triangle {
+  display: inline-block;
+  margin: 0 5px;
+  vertical-align: middle;
+}
+.triangle-0 {
+  width: 240px;
+  height: 240px;
+  transform: rotate(1deg);
+  border-bottom: solid 110px #086ad7;
+  border-right: solid 110px #086ad7;
+  border-left: solid 122px transparent;
+  border-top: solid 120px transparent;
+  position: relative;
+  bottom: 14rem;
+  left: 7.6rem;
+  z-index: -1;
+}
+
+/*
+ end client section 
+ ===============================*/
+
+
+/*
+ ===============================
+start  Ready To Get Consultations For  section
+==================================*/
+
+.free-quate-div{
+
+	width: 80%;
+	height: 10rem;
+	left: 10%;
+
+
+}
+
+.bg-cover-free{
+	position: relative;
+
+	z-index: 5555;
+	height: 22rem;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	object-fit: fill;
+	border-radius: 1rem;
+	display: flex;
+	background-image:linear-gradient( #086ad7e8, #086ad7d1 ),
+	 url('https://www.extracle.com/assets/img/cta-bg.jpg');
+
+}
+.bg-cover-free h1{
+	position: relative;
+	left: 8rem;
+	font-size: 4.2rem;
+	color: #fff;
+	font-weight: 800;
+	line-height: 6rem;
+	top: 2rem;
+
+}
+
+.bg-cover-free a{
+	position: relative;
+	left: 98%;
+	border-radius: 1rem;
+	bottom: 4.6rem;
+	padding: 2rem  4rem;
+	font-size: 1.6rem;
+	color: #086ad7;
+	font-weight: 600;
+	background-color: #fff;
+	text-transform: uppercase;
+
+}
+
+.bg-cover-free a:hover{
+	background-color: #000;
+	text-decoration: none;
+	color: #fff;
+	transition: linear .5s;
+
+}
+
+.bg-cover-free i{
+	padding: 1rem;
+}
+
+
+
+
+
+
+
+/*
+end Ready To Get Consultations For section 
+==========================================*/
+
+
+
+/*
+=====================================
+achievmnt 
+=====================================*/
+.achievment{ 
+	background-image: url('https://www.extracle.com/assets/img/funfact-line.png');
+	display: flex; 
+	gap: 10rem; 
+	justify-content: center; 
+	align-items: center; 
+	background-color: #211e3b; 
+	height: 50rem; 
+    color: #fff;
+   position: relative;
+   z-index: -1;
+}
+
+.achievment i{
+	color: #fff;
+	font-size: 7rem;
+	position: relative;
+	left: 1rem;
+}
+
+.achievment h3{
+	font-size: 4rem;
+	font-weight: 800;
+}
+
+.achievment p{
+	font-size: 1.7rem;
+	font-weight: 500;
+	position: relative;
+	right: 2rem;
+}
+sup{
+	font-size: 3rem;
+	font-weight: 400;
+	position: relative;
+	bottom: 14rem;
+}
+
+/*
+end 
+======================================*/
+
+
+
+
+
+/*
+======================================
+start blog section 
+======================================*/
+
+.blog-main-section{
+	height: 70rem;
+	color: #f8f9fa;
+
+}
+
+.blog-main-section span{
+	text-transform: uppercase;
+	font-size: 10rem;
+	position: relative;
+	top: 8rem;
+    color: #dadada;
+    opacity: .1;
+    font-weight: 700;
+}
+
+.blog-main-section p{
+	font-size: 2rem;
+	color: #086ad8;
+	font-weight: 700;
+	text-transform: uppercase;
+	position: relative;
+	bottom: 1.3rem;
+}
+
+.blog-main-section h1{
+	font-size: 3.5rem;
+	font-weight: 700;
+	position: relative;
+	bottom: 2rem;
+	color: #000;
+}
+
+.single-blog-card{
+	max-width: 20rem;
+	background-color: crimson;
+}
+
+.blog-row{
+	margin: 5rem;
+	margin-left: 8rem;
+	display: flex;
+	gap: 1rem;
+
+	}
+
+
+.blog-div{
+	box-shadow: 0px 10px 60px 0px rgba(200, 226, 255, 0.45);
+
+	border-radius: 1rem;
+	width: 38rem;
+	height: 49rem;
+	display: flex;
+	gap: 5;
+	margin: 0 1.5rem;
+
+}
+
+.blog-row img{
+	border-radius: 1rem;
+	width: 37.5rem;
+	position: relative;
+	right: 1rem;
+
+}
+
+
+.card-body-blog{
+	width: 30rem;
+
+}
+
+.writer{
+	position: relative;
+	left: 5rem;
+	top: 2rem;
+	color: #696969;
+	font-weight: 700;
+	font-size: 1.6rem;
+}
+
+.writer:hover{
+	text-decoration: none;
+	color: #696969;
+}
+
+
+.blog-link{
+	font-size: 1.8rem;
+	color: #211e3b;
+	position: relative;
+	left: 3rem;
+	top: 1rem;
+	font-weight: 700;
+}
+
+.blog-link:hover{
+	text-decoration: none;
+	color: #211e3b;
+}
+
+.blog-btn{
+	background-color: #fff;
+	border: .1rem solid #dadada ;
+	text-transform: uppercase;
+	padding: 1.5rem;
+	position: relative;
+	top: 3.8rem;
+	left: 5rem;
+	font-size: 1.4rem;
+	width: 30rem;
+	color: #696969;
+	font-weight: 600;
+	border-radius: 1rem;
+
+}
+
+.blog-btn:hover{
+	background-color: #086ad7;
+	color: #fff;
+	text-decoration: none;
+}
+
+.blog-row i{
+	padding: .3rem;
+}
+
+/*
+end blog section
+===================================
+*/
+
+
+
+/*===================================
+start get in touch section 
+===================================*/
+.cta-content{
+	background-image:url('https://www.extracle.com/assets/img/cta_bg1.png');
+	max-width: 90%;
+	height: 50rem;
+	background-color: #086ad7;
+	display: flex;
+	color: white;
+	justify-content: start;
+	align-items: start;
+	justify-items: self-start;
+	position: relative;
+	z-index: 333;
+	top: 18rem;
+	left: 5%;
+	border-radius: 1rem;
+	overflow: hidden;
+}
+.cta-content h1{
+	position: relative;
+	font-size: 4rem;
+	font-weight: 700;
+	display: flex;
+	top: 8rem;
+	left: 19rem;
+}
+
+.cta-content p{
+	max-width: 50%;
+	font-size: 1.6rem;
+	font-weight: 600;
+	position: relative;
+	left: 16rem;
+	top: 9rem;
+	padding-bottom: 4rem;
+	line-height: 3rem;
+	text-align: left;
+	letter-spacing: .1rem;
+}
+
+.contact-btn{
+	position: relative;
+	bottom: 18rem;
+	left: 71%;
+	padding: 5rem 4rem;
+	
+
+	
+
+}
+
+.contact-btn i{
+	padding: 2rem;
+
+}
+
+.contact-btn a{
+	border: .1rem solid #fff;
+}
+
+.contact-btn a:hover{
+	border: none;
+	text-decoration: none;
+	color: #fff;
+	background-color: #086ad7;
+
+}
+
+.dot-get{
+	position:relative;
+	z-index: 3333;
+	color: #fff;
+	background-color: #086ad7;
+}
+
+.dot-left{
+	position: relative;
+	top: 65rem;
+	left: 14rem;
+	font-size: 3rem;
+	color: #fff;
+	background-color: transparent;
+	width: 10rem;
+}
+
+.dot-right{
+		position: relative;
+	top: 31rem;
+	left: 138rem;
+	font-size: 1.7rem;
+	color: #fff;
+	background-color: transparent;
+	width: 10rem;
+
+}
+
+
+
+
+
+
+/*
+end get in touch section 
+=====================================*/
+/*
+
+
+
+
+
+
+
+
+/*
+======================================
+start footer section 
+======================================*/
+.footer-main-class{
+	 background: linear-gradient(#030b30f0, #090118e6), url('https://www.extracle.com/assets/img/home3/footer_bg.jpg');
+	 background-position: top;
+	 background-size: cover !important;
+	 background-repeat: no-repeat;
+	  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	
+	
+	 position: relative;
+	 z-index: -1; 
+	 width: 100%;
+}
+
+.footer-first-div{
+	position: relative;
+	top: 26rem;
+	color: #696969;
+
+	width: 35rem;
+	font-size: 1.9rem;
+	line-height: 3.6rem;
+}
+
+.footer-first-div h3{
+	position: relative;
+	bottom: 2rem;
+	color: #fff;
+	font-weight: 800;
+}
+.footer-first-div a:hover{
+	text-decoration: none;
+}
+
+.footer-first-div p{
+	color:  #696969;
+	font-size: 2rem;
+}
+
+
+
+.footer-second-div{
+	
+	position:relative;
+	top: 26rem;
+	height: 35rem;
+	width: 23rem;
+	color: #fff;
+}
+
+.footer-second-div  .fa-solid, .footer-third-div ul li  .fa-solid{
+	font-size: 1.5rem;
+	color: #696969;
+	font-weight: 800;
+}
+
+.footer-second-div ul li i:hover, .footer-third-div ul li i:hover{
+	padding: 0;
+	margin: 0;
+}
+
+
+.footer-third-div ul li a:hover, .footer-second-div ul li a:hover{
+	padding-left: 2rem;
+	transition-duration: .4s;
+}
+
+.footer-second-div h4, .footer-third-div h4{
+	font-size: 2rem;
+	color: #fff;
+	font-weight: 700;
+}
+
+.footer-second-div a, .footer-third-div a{
+	color: #696969;
+	font-weight: 700;
+	text-decoration: none;
+	line-height: 4.8rem;
+	font-size: 1.6rem;
+	list-style-type: none;
+}
+
+.footer-second-div ul, .footer-third-div ul{
+	list-style-type: none;
+	text-decoration: none;
+}
+
+.footer-second-div ul li i, .footer-third-div ul li a i{
+	font-size: 2.7rem;
+}
+
+.footer-third-div{
+	
+	position: relative;
+	width: 23rem;
+	height: 35rem;
+	top: 26rem;
+}
+
+.footer-fourth-div{
+
+	width: 40rem;
+	position: relative;
+	left: 45rem;
+	height: 35rem;
+	bottom: 9rem;
+}
+
+.footer-fourth-div h4{
+	color: #fff;
+	font-size: 2rem;
+	font-weight: 700;
+	padding-bottom: 2rem;
+}
+
+
+.img-thumbnail{
+	border: none;
+	padding: 0;
+	height: 9rem;
+	object-fit: fill;
+	border-radius: 1rem;
+}
+.post-data span{
+	color: black;
+	font-size: 1.5rem;
+	font-weight: 600;
+}
+
+.post-data h5 a{
+	color: #696969;
+	font-size: 1.7rem;
+	font-weight: 700;
+}
+.last-post{
+	position: relative;
+	bottom: 7rem;
+}
+.last-post-data{
+	position: relative;
+	bottom: 8rem;
+}
+
+.post-data h5, .post-data span{
+	position: relative;
+	bottom: 9rem;
+	left: 15rem;
+	color: #696969;
+	width: 15rem;
+	font-weight: 600;
+}
+.post-data h5:hover, .post-data span:hover{
+	text-decoration: none;
+}
+
+.post-data h5 a:hover{
+	text-decoration: none;
+}
+
+
+
+
+.social-link-left, .social-link-right{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.social-link-right{
+	position: relative;
+	bottom: 12rem;
+	left: 1rem;
+}
+
+.outer-link{
+	position: relative;
+	width: 3.8rem;
+	right: 7rem;
+	height: 3.8rem;
+	background-color: #dae9f9;
+	border-radius: 50%;
+	margin: .3rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+}
+
+.outer-link a{
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+
+.line{
+	color: white;
+	height: .2rem;
+}
+
+.footer-bottom-content{
+	border-top: .1rem solid #696969;
+	padding: 2rem;
+	position: relative;
+	top: 0rem;
+}
+.footer-widgets{
+	position: relative;
+	z-index: 666;
+}
+.footer-bottom-content p, .footer-bottom-content a{
+	font-size: 1.6rem;
+	font-weight: 800;
+	color: #696969;
+
+}
+
+.footer-bottom-content a:hover{
+	text-decoration: none;
+}
+/*
+end footer section 
+=========================================*/
+
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+
+  }
+  .navbar, .main-menu{
+  	display: none;
+  }
+}
+
+@media only screen and (max-width: 1200px){
+	    html{
+	    	font-size: 56%;
+	    	
+	    	
+	        }
+
+	     body{
+	     	overflow-x: hidden;
+	     }   
+
+	     .hide-nabvar{
+	     	display: none;
+	     }
+
+	     .main-header{
+	     	display: flex;
+	     	justify-content: space-around;
+	     }   
+
+
+	     .navbar, .main-menu{
+  	             display: none;
+               }
+
+
+
+
+          .heading-main-section{
+          	height: auto;
+          	background-size: cover;
+          	background-repeat: no-repeat;
+
+          }     
+
+          .heading-section{
+          	overflow: hidden;
+            width: 100%;
+          }
+
+          .content-img {
+          	left: 2rem;
+          }
+
+          .about-sec{
+          	left: 0;
+          }
+
+          .about{
+          	width: 40rem;
+          }
+
+          .about span{
+          	left: 12rem;
+          	font-size: 10rem;
+          }
+
+          .about-company h3{
+          	font-size: 2rem;
+          	position: relative;
+          	right: 8rem;
+          	top: 2rem;
+          }
+
+          .about-company h1{
+          	font-size: 3rem;
+          	position: relative;
+          	right: 8rem;
+          	bottom: 7rem;
+          }
+
+          .client-main-div{
+          	position: static;
+          	margin-top: 19rem;
+          	margin-left: 2rem;
+          
+          }
+
+          
+
+
+
+
+         .consultations-form{
+              position: relative;
+
+              bottom: 95rem;
+              
+              left: 59rem;
+              width: 70rem;
+         }
+
+         .consultations-form h1{
+         	font-size: 3.8rem;
+
+         }
+
+         .consultations-form input{
+         	width: 60rem;
+         	font-size: 2rem;
+         }
+
+
+       /*  .single-service-box-1{
+         	width: 52rem;
+         	font-size: 4rem;
+         	text-align: center;
+         }
+
+         .single-service-box-1 img{
+         	width: 36rem;
+         }
+
+         .col-size{
+         	width: 40rem;
+         }
+*/
+
+         .how-does-work{
+         	font-size: 3rem;
+         	height: 112rem;
+         }
+
+         .text-center-meeting span{
+         	font-size: 12rem;
+         }
+
+         .text-center-meeting p{
+         	font-size: 2rem;
+         }
+
+         .text-center-meeting h1{
+         	font-size: 4rem;
+         	left: 6rem;
+         }
+
+         .coffee-div, .analysis-div{
+         	top: .1rem;
+         	margin-left: 2rem;
+         }
+
+         .trophy-div, .comment-div{
+         	margin: 0;
+         	padding: 0;
+         }
+
+         .how-does-work-common span{
+         	font-size: 1.8rem;
+         }
+
+         .text-get-in-touch{
+         	width: 98%;
+         	left: 0;
+         	font-weight: 900;
+         	font-size: 4;
+         }
+
+         .text-get-in-touch p{
+         	font-weight: 600;
+         	font-size: 1.8rem;
+         	line-height: 3.8rem;
+         }
+
+         .text-get-in-touch a{
+         	width: 60rem;
+         	bottom: 20rem;
+         	left: 43rem;
+         }
+
+         .dot-circle{
+         	width: 22.4rem;
+         	height: 22.5rem;
+         }
+
+         .client-sec{
+         	height: 110rem;
+         }
+
+         .client-country{
+         	position: relative;
+         	right:22rem;
+         	top: 1.8rem;
+
+         	margin: 0;
+         	padding: 0;
+
+          }
+         .client-country span{
+         	font-size: 12rem;
+         }
+
+         .client-country p{
+         	bottom: 6rem;
+         }
+
+         .client-div h1{
+         	font-size: 3.8rem;
+         	font-weight: 900;
+         	width: 50%;
+         	line-height: 4.5rem;
+         }
+
+         .client-div h3{
+         	position: relative;
+         	left: 4rem;
+         }
+
+         .map-card{
+         	position: relative;
+         	top: -77rem;
+         	
+         	left: 58rem;
+         }
+
+         .triangle{
+         	bottom: 21rem;
+         	right: 4rem;
+         }
+
+         .get-ready{
+         	position: relative;
+         
+         	height: 20rem;
+         	margin: 0;
+         	padding: 0;
+         	overflow: visible;
+         }
+         .bg-cover-free{
+         	position: absolute;
+         	z-index: 444;
+         	width: 96%;
+         	left: 2%;
+         	height: 25rem;
+         }
+
+         .achievment-sec{
+         	height: 20rem;
+         	margin: 0;
+         	padding: 0;
+         }
+
+         .achievment{
+         	position: absolute;
+         	z-index: 333;
+         	width: 100%;
+         }
+
+         .style-3{
+         	position: relative;
+         	bottom: 12rem;
+         }
+
+         .style-3 p{
+         	font-size: 1.7rem;
+         }
+
+         .style-3 h1{
+         	height: 4rem;
+         	font-weight: 800;
+         	color: #000;
+         }
+
+         .blog-main-sec{
+         	height: 50rem;
+         }
+
+         .blog-row{
+         	position: relative;
+         	bottom: 10rem;
+         	margin: 0;
+         	padding: 0;
+
+         }
+         .blog-div{
+         	width: 50rem;
+         	margin: .1rem;
+         }
+
+         .blog-div img{
+         	width: 33.6rem;
+         }
+
+         .footer-main-class{
+         	  background: linear-gradient(#030b30f0, #090118e6), url('https://www.extracle.com/assets/img/home3/footer_bg.jpg');
+			  background-position: top;
+		      background-size: auto;
+		      background-repeat: no-repeat;
+			 -webkit-background-size: cover;
+			  -moz-background-size: cover;
+			  -o-background-size: cover;
+			  background-size: cover;
+         }
+
+         .footer-fourth-div{
+         	position: relative;
+         	top: 26.3rem;
+         	left: 1rem;
+         	margin: 0;
+         	padding: 0;
+         }
+
+         .footer-bottom-content{
+         	top: 30rem;
+         }
+
+
+
+}
+
+
+
+
+@media only screen and (max-width: 992px){
+	    html{
+	    	font-size: 56%;
+	    	overflow-x: hidden;
+	    	
+	    	
+	        }
+
+	     body{
+	     	overflow-x: hidden;
+	     } 
+
+
+	     .consultations-form{
+           width: 48rem;
+	     }
+
+	     .consultations-form input{
+	     	width: 40rem;
+	     }
+
+/*
+	     .single-service-box-1 img{
+	     	width: 29rem;
+	     }
+
+	     .single-service-box-1 p{
+	     	width: 30rem;
+	     }
+
+	     .col-size img{
+	     	width: 37rem;
+	     }
+*/
+
+         .text-center-meeting .style-3{
+         	position: relative;
+         	top: 2rem;
+         }
+
+         .bg-cover a{
+         	position: relative;
+         	left: 35rem;
+         	bottom: 23rem;
+         }
+
+         .client-sec {
+         	height: 170rem;
+         }
+
+         .client-div{
+         	background-color: transparent;
+         }
+
+         .client-country h1{
+         	width: 50rem;
+         }
+
+         .map-card {
+         	position: relative;
+             top: -18rem;
+             left: 2rem;
+            
+
+         }
+
+         .map-card img{
+         	position: relative;
+         	 z-index: 5;
+             width: 104rem;
+
+         }
+
+
+         .triangle{
+         	position: relative;
+         	bottom: 20rem;
+            left: 40rem;
+         	z-index: 2;
+         }
+
+
+
+
+
+         .free-quate-div{
+         	width: 95%;
+         	height: 70rem;
+         }
+
+         .achievment{
+         	position: relative;
+         }
+
+
+         .bg-cover-free{
+         	position: relative;
+         	z-index: 344;
+         	height: 32rem;
+            justify-content: center;
+         }
+
+
+         .bg-cover-free h1{
+         	font-size: 4rem;
+         	text-align: center;
+         	left: 0;
+
+         }
+      
+      .bg-cover-free a{
+      	position: relative;
+      	left: 0;
+      	top: 7rem;
+      }
+
+      .blog-main-sec{
+      	height: 65rem;
+      }
+
+      .blog-3{
+      	position: relative;
+      	top: -5rem;
+
+      }
+
+      .blog-row{
+      	position: relative;
+      	top: 6rem;
+      }
+
+
+      .section-bg{
+      	   position: absolute;
+      	   top: 60rem;
+      	   z-index: 444;
+      	   width: 80%;
+      	   text-align: center;   
+      	  
+
+      	     }
+
+      	     .cta-content{
+      	     	width: 80%;
+      	     }
+
+      	     .cta-content img{
+      	     	width: 70%;
+      	     }
+
+      	    .cta-content h1{
+      	    	position: relative;
+      	    	left: 30rem;
+      	    	
+      	    
+      	    }
+
+      	    .cta-content p{
+      	    	position: relative;
+      	    	
+      	    	left: 6rem;
+      	    	text-align: center;
+      	    	width: 150rem;
+      	    }
+
+      	    .theme-btn-get-in{
+      	    	position: relative;
+      	    	right: 75rem;
+      	    	top: 21rem;
+      	    	
+      	    	z-index: 55656;
+      	    
+      	    }
+
+
+      	    .footer-main-class{
+      	    	position: relative;
+      	    	height: auto;
+      	    	background-size: auto;
+      	    }
+
+
+      .footer-main-class{
+      	 -webkit-background-size: cover;
+  -moz-backgrou   nd-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    
+      	position: relative;
+      	z-index: -1;
+      	height: auto;
+      	
+      }
+
+
+      .footer-first-div{
+      	position: relative;
+      	width: 50%;
+
+      }
+
+      .footer-first-div img{
+      	position: relative;
+      	top: 20rem;
+      	bottom: 0;
+      	right: 30rem;
+
+      }
+      
+      .footer-first-div h3{
+      	position: relative;
+      	top: 22rem;
+      	
+      	right: 35rem;
+      }
+
+      .outer-link{
+      	position: relative;
+      	right: 17rem;
+      	
+      }
+
+      .outer-link a{
+      	position: relative;
+      	top: 0rem;
+      	right: 0rem;
+      	left: 0;
+      }
+
+
+
+      .footer-second-div{
+            position: relative;
+            width: 50%;
+
+
+      }
+
+      .footer-second-div a{
+      	position: relative;
+      	top: 0rem;
+      	padding: 0;
+      	right: 4rem;
+      	left: 0;
+
+      }
+
+
+
+      .footer-third-div{
+      	position: relative;
+      	width: 50%;
+
+      }
+
+      .footer-third-div a{
+      	position: relative;
+      	top: 0rem;
+      	left: 0;
+      }
+
+
+      .footer-fourth-div{
+      	position: relative;
+      	width: 50%;
+
+      }
+
+      .post-data h5{
+      	width: 30rem;
+ 
+      }
+
+      .post-data h5 a{
+      	position: relative;
+      	left: 0;
+      	right: 15rem;
+      	top: 0rem;
+      	     }
+
+      	.footer-bottom a{
+      		position: relative;
+      		top: 0rem;
+      		left: 0;
+      	}     
+
+
+
+
+}
+
+
+@media only screen and (max-width: 500px){
+     .footer-first-div img{
+     	position: relative;
+     	bottom: 35rem;
+     	top: 0;
+
+     }
+
+}
+
+
+
+
+
+
+
